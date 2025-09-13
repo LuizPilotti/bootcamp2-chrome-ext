@@ -1,4 +1,4 @@
-# bootcamp2-chrome-ext-LuanJywago
+# bootcamp2-chrome-extension
 
 Notas Rápidas
 Extensão simples (Manifest V3) para salvar notas rápidas no navegador.
