@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Notas Rápidas</title>
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <!--Parte onde vai aparecer o título para o usuário de forma fácil-->
+  <div class="popup">
+    <h1>Notas Rápidas</h1>
+
+    <!--Área onde fica os inputs principais de título da nota e conteúdo da nota-->
+    <input id="noteTitle" type="text" placeholder="Título da nota..." />
+    <textarea id="noteInput" placeholder="Escreva sua nota aqui..."></textarea>
+    <button id="saveBtn">Salvar Nota</button>
+
+    <!--Espaço onde vai mostrar as notas com possibilidade de alteração, edição e remoção-->
+    <h2>Minhas Notas</h2>
+    <ul id="notesList"></ul>
+  </div>
+
+    <!-- Modal para exibir e editar notas através da ligação com o JS feito em popup.js -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <h3 id="modalTitle">Título</h3>
+      <div id="modalBody">Conteúdo</div>
+      <div class="modal-actions">
+        <button id="modalEditBtn">Editar</button>
+        <button id="modalCloseBtn">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Script para decretar a ligação entre o sistema com o js-->
+  <script src="popup.js" defer></script>
+</body>
+
+</html>
